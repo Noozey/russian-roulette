@@ -10,9 +10,10 @@ export default function Gamepage() {
   const { playerNumber } = usePlayer();
   const [cardNumber, setCardNumber] = useState<number>(5);
   const [startGame, setStartGame] = useState<boolean>(false);
-  setCardNumber(5);
+
   const navigate = useNavigate();
   if (playerNumber === 0 || null) {
+    setCardNumber(5);
     navigate("/");
   }
 
