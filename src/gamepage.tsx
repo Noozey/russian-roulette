@@ -11,7 +11,6 @@ import Ace from "./image/deck/ace.png";
 import Jocker from "./image/deck/joker.png";
 import eyeopen from "./image/open.svg";
 import eyeoclosed from "./image/closed.svg";
-import { EyeClosed } from "lucide-react";
 
 export default function Gamepage() {
   const navigate = useNavigate();
@@ -31,7 +30,7 @@ export default function Gamepage() {
 }
 const CardBundle = () => {
   const { playerNumber } = usePlayer();
-  const [cardNumber, setCardNumber] = useState<number>(5);
+  const cardNumber = 5;
   const [startGame, setStartGame] = useState<boolean>(false);
   const [showCardPlayerOne, setShowCardPlayerOne] = useState<boolean>(false);
   const [showCardPlayerTwo, setShowCardPlayerTwo] = useState<boolean>(false);
